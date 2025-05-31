@@ -2,20 +2,52 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Marvora: A curatorial studio exploring spatial intimacy, sensory design, and silent presence">
-    <title>Marvora - Interior Design Studio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Marvora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Example: Use a soft, modern font like 'Montserrat' -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+    }
+    .logo-title img {
+      width: 160px;
+      height: auto;
+      border-radius: 24px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      margin-bottom: 24px;
+    }
+    .logo-title h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #3a3a3a;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+  </style>
 </head>
 
 <body>
     <!-- Header Section -->
-    <header>
-        <div class="logo">
-            <h1>@marvora.com</h1>
-        </div>
-    </header>
+    <div class="logo-title">
+        <img src="assets/9E8093FE-1E34-4F95-806A-63B29E28859D.png" alt="Marvora Logo">
+        <h1>Marvora</h1>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -35,17 +67,24 @@
         <h2>Our Work</h2>
         <div class="gallery-container">
             <!-- Images from user uploads -->
-            <img src="./assets/5725A3E1-AB3D-4D08-BECC-88A6A44F57B8.png" alt="Interior Design Image 1">
-            <img src="./assets/A74ED3BA-9956-485C-A4FE-49C6B1972CBE.png" alt="Interior Design Image 2">
-            <img src="./assets/IMG_4565.jpeg" alt="Interior Design Image 3">
-            <img src="./assets/5801F019-95E3-4FA6-B237-B49589C30572.png" alt="Interior Design Image 4">
-            <img src="./assets/2848403C-D7E1-48B7-9195-5176D3DC1254.png" alt="Interior Design Image 5">
-            <img src="./assets/AEF99478-744F-4F70-B093-B25A4485E17E.png" alt="Interior Design Image 6">
-            <img src="./assets/3ABE116F-1438-4B2F-9B4F-25DE747BEB1C.png" alt="Interior Design Image 7">
-            <img src="./assets/IMG_4566.jpeg" alt="Interior Design Image 8">
-            <img src="./assets/FFE810F3-E591-46E9-9A00-472CD97D7695.png" alt="Interior Design Image 9">
-            <img src="./assets/C6E711C2-384E-4D79-84B7-C66949D046DE.png" alt="Interior Design Image 10">
+            <img src="./assets/1F37EE85-DCD1-472F-A84E-592BF8450858.png" alt="Interior Design Image 1">
+            <img src="./assets/3B496CCD-3BC3-4503-A297-414366BDF651.jpeg" alt="Interior Design Image 2">
+            <img src="./assets/05AAA630-C212-46CB-95DC-DCAACB153D2D.png" alt="Interior Design Image 3">
+            <img src="./assets/7B26C703-A773-4601-8DF8-729538BB7E3B.png" alt="Interior Design Image 4">
+            <img src="./assets/9AC8664E-9128-4D50-AF41-386FB71AAC52.png" alt="Interior Design Image 5">
+            <img src="./assets/9E8093FE-1E34-4F95-806A-63B29E28859D.png" alt="Interior Design Image 6">
+            <img src="./assets/B8602166-BE92-4167-9117-C57B46DC832E.jpeg" alt="Interior Design Image 7">
+            <img src="./assets/A5E0ED69-1AC4-4DB8-9A09-56DF5A5C7AA7.png" alt="Interior Design Image 8">
+            <img src="./assets/D2D867C0-AB8E-4976-A244-13341727051F.png" alt="Interior Design Image 9">
+            <img src="./assets/BD69BCC6-F1E4-4928-8F64-36A8A91148CE.png" alt="Interior Design Image 10">
         </div>
+    </section>
+    
+    <!-- Education Section -->
+    <section class="education">
+        <h2>Education</h2>
+        <p>Kingston University </p>
+        <p>Master of Arts, Interior Design, 2022</p>
     </section>
 
     <!-- Contact Section -->
@@ -58,8 +97,7 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2022 Marvora. All Rights Reserved.</p>
-        <p>Education: Kingston University Master of Arts Interior Design 2022</p>
+        <p>&copy; Marvora. All Rights Reserved.</p>
     </footer>
 
 </body>
