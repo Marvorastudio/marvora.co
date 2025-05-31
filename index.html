@@ -6,88 +6,75 @@
   <title>Marvora</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Use a minimalist, light font similar to sanaa.co.jp -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <!-- Substitute for Core Serif N 45 Medium: Use 'Noto Serif' from Google Fonts for similar look -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500&display=swap" rel="stylesheet">
   <style>
-    /* Soft, light gray background sampled from the logo image */
     body {
-      background: #f7f6f3;
+      background: #DCDDCC;
       min-height: 100vh;
       margin: 0;
-      font-family: 'Montserrat', Arial, sans-serif;
+      font-family: 'Noto Serif', serif;
       color: #222;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
-      font-size: 14px;
+      font-size: 13px;
       letter-spacing: 0.01em;
-      font-weight: 300;
+      font-weight: 500;
     }
-    .logo-title {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 32px;
-      margin-bottom: 16px;
-    }
-    .logo-title img {
-      width: 96px;
-      height: auto;
-      border-radius: 16px;
-      box-shadow: none;
-      margin-bottom: 8px;
-      background: transparent;
+    header, .logo {
+      margin-bottom: 12px;
     }
     h1, h2 {
-      font-size: 1.1rem;
-      font-weight: 400;
-      margin: 0 0 12px 0;
-      letter-spacing: 0.04em;
+      font-size: 1.05rem;
+      font-weight: 500;
+      margin: 0 0 6px 0;
+      letter-spacing: 0.03em;
       color: #222;
+      line-height: 1.2;
     }
     h2 {
-      font-size: 1rem;
-      font-weight: 400;
-      margin-top: 24px;
-      margin-bottom: 8px;
+      font-size: 0.98rem;
+      margin-top: 18px;
+      margin-bottom: 4px;
     }
     section {
       width: 100%;
-      max-width: 420px;
-      margin: 0 auto 12px auto;
-      padding: 0 12px;
+      max-width: 700px;
+      margin: 0 auto 8px auto;
+      padding: 0 16px;
       box-sizing: border-box;
     }
-    .hero h2 {
-      font-size: 1rem;
-      font-weight: 300;
-      margin-bottom: 8px;
-      color: #444;
-    }
-    .hero p {
-      font-size: 0.95rem;
-      color: #666;
-      margin-bottom: 0;
+    .hero h2, .hero p {
+      margin-bottom: 2px;
+      margin-top: 0;
+      line-height: 1.4;
     }
     .about, .education, .contact {
-      font-size: 0.95rem;
+      font-size: 0.97rem;
       color: #444;
+      margin-bottom: 0;
+      line-height: 1.5;
+    }
+    .about p, .education p, .contact p {
+      margin: 0 0 4px 0;
+      line-height: 1.5;
     }
     .gallery-container {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 6px;
       justify-content: center;
-      margin-bottom: 8px;
+      margin-bottom: 4px;
     }
     .gallery-container img {
-      width: 90px;
+      width: 64px;
       height: auto;
-      border-radius: 8px;
+      border-radius: 6px;
       object-fit: cover;
       box-shadow: none;
-      background: #f7f6f3;
+      background: #DCDDCC;
       margin: 0;
       transition: opacity 0.2s;
       opacity: 0.95;
@@ -96,9 +83,9 @@
       opacity: 1;
     }
     footer {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       color: #aaa;
-      margin: 32px 0 8px 0;
+      margin: 24px 0 6px 0;
       text-align: center;
       width: 100%;
     }
@@ -110,14 +97,14 @@
     a:hover {
       color: #222;
     }
-    @media (max-width: 500px) {
+    @media (max-width: 700px) {
       section {
         max-width: 98vw;
-        padding: 0 4vw;
+        padding: 0 2vw;
       }
       .gallery-container img {
-        width: 44vw;
-        max-width: 120px;
+        width: 28vw;
+        max-width: 80px;
       }
     }
   </style>
@@ -125,9 +112,11 @@
 
 <body>
     <!-- Header Section -->
-    <div class="logo-title">
-        <img src="assets/9E8093FE-1E34-4F95-806A-63B29E28859D.png" alt="Marvora Logo">
-    </div>
+    <header>
+        <div class="logo">
+            <img src="assets/9E8093FE-1E34-4F95-806A-63B29E28859D.png" alt="Marvora Logo" style="width:72px; border-radius:12px; display:block; margin:0 auto 4px auto; background:#DCDDCC;">
+        </div>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -137,7 +126,6 @@
 
     <!-- About Section -->
     <section class="about">
-        <h2>About Marvora</h2>
         <p>Marvora is a curatorial design brand rooted in silence and sensory experience. We do not seek to make noise in the world, but rather to plant seeds of atmosphere, texture, and meaning through exhibitions, objects, and spaces quietly crafted with intention.</p>
         <p>Marvora is my way of being part of, not by changing it, but by quietly leaving my mark. If one day you walk into a space, touch a piece of furniture, sense a particular light or scent, and feel something shift within you, that is where Marvora has been.</p>
     </section>
@@ -160,16 +148,14 @@
     <!-- Education Section -->
     <section class="education">
         <h2>Education</h2>
-        <p>Kingston University </p>
-        <p>Master of Arts, Interior Design, 2022</p>
+        <p>Kingston University</p>
+        <p>Interior Design, Master of Arts 2022</p>
     </section>
 
     <!-- Contact Section -->
     <section class="contact">
-        <h2>Contact Us</h2>
         <p>If you would like to contact us, please send an email to the following address.</p>
-        <p>Interior design, exhibitions, and furniture designs. (English / Mandarin / Korean)</p>
-        <p>Email: <a href="mailto:marvora.studio@gmail.com">marvora.studio@gmail.com</a></p>
+        <p>Interior design, exhibitions, and furniture designs. (English / Mandarin / Korean): <a href="mailto:marvora.studio@gmail.com">marvora.studio@gmail.com</a></p>
     </section>
 
     <!-- Footer Section -->
