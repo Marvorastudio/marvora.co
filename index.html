@@ -6,107 +6,135 @@
   <title>Marvora</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Substitute for Core Serif N 45 Medium: Use 'Noto Serif' from Google Fonts for similar look -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500&display=swap" rel="stylesheet">
+  <!-- Use a minimalist, light font similar to sanaa.co.jp -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
   <style>
     body {
-      background: #DCDDCC;
-      min-height: 100vh;
-      margin: 0;
-      font-family: 'Noto Serif', serif;
-      color: #222;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      font-size: 13px;
-      letter-spacing: 0.01em;
-      font-weight: 500;
-    }
-    header, .logo {
-      margin-bottom: 12px;
-    }
-    h1, h2 {
-      font-size: 1.05rem;
-      font-weight: 500;
-      margin: 0 0 6px 0;
-      letter-spacing: 0.03em;
-      color: #222;
-      line-height: 1.2;
-    }
-    h2 {
-      font-size: 0.98rem;
-      margin-top: 18px;
-      margin-bottom: 4px;
-    }
-    section {
-      width: 100%;
-      max-width: 700px;
-      margin: 0 auto 8px auto;
-      padding: 0 16px;
-      box-sizing: border-box;
-    }
-    .hero h2, .hero p {
-      margin-bottom: 2px;
-      margin-top: 0;
-      line-height: 1.4;
-    }
-    .about, .education, .contact {
-      font-size: 0.97rem;
-      color: #444;
-      margin-bottom: 0;
-      line-height: 1.5;
-    }
-    .about p, .education p, .contact p {
-      margin: 0 0 4px 0;
-      line-height: 1.5;
-    }
-    .gallery-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      justify-content: center;
-      margin-bottom: 4px;
-    }
-    .gallery-container img {
-      width: 64px;
-      height: auto;
-      border-radius: 6px;
-      object-fit: cover;
-      box-shadow: none;
-      background: #DCDDCC;
-      margin: 0;
-      transition: opacity 0.2s;
-      opacity: 0.95;
-    }
-    .gallery-container img:hover {
-      opacity: 1;
-    }
-    footer {
-      font-size: 0.8rem;
-      color: #aaa;
-      margin: 24px 0 6px 0;
-      text-align: center;
-      width: 100%;
-    }
-    a {
-      color: #888;
-      text-decoration: underline dotted;
-      transition: color 0.2s;
-    }
-    a:hover {
-      color: #222;
-    }
-    @media (max-width: 700px) {
-      section {
-        max-width: 98vw;
-        padding: 0 2vw;
-      }
-      .gallery-container img {
-        width: 28vw;
-        max-width: 80px;
-      }
-    }
+        background: #DCDDCC;
+        min-height: 100vh;
+        margin: 0;
+        font-family: 'Noto Serif', serif;
+        color: #222;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 13px;
+        letter-spacing: 0.01em;
+        font-weight: 500;
+        text-align: center; /* Center all text */
+        }
+        header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 36px; /* Shift header down */
+        margin-bottom: 18px;
+        }
+        .logo h1 {
+        font-size: 2.8rem; /* Larger header text */
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        color: #222;
+        margin: 0;
+        text-align: center;
+        }
+        h1, h2 {
+        margin: 0 0 6px 0;
+        letter-spacing: 0.03em;
+        color: #222;
+        line-height: 1.2;
+        text-align: center;
+        }
+        h2 {
+        font-size: 1.1rem;
+        margin-top: 18px;
+        margin-bottom: 4px;
+        color: #888; /* Lighter color for hero h2 */
+        font-weight: 500;
+        }
+        section {
+        width: 100%;
+        max-width: 700px;
+        margin: 32px auto 8px auto; /* Shift sections down */
+        padding: 0 16px;
+        box-sizing: border-box;
+        text-align: center;
+        }
+        .hero h2 {
+        font-size: 1.3rem; /* Smaller than header, larger than body */
+        color: #888; /* Lighter than header */
+        margin-bottom: 6px;
+        margin-top: 0;
+        line-height: 1.4;
+        font-weight: 400;
+        }
+        .hero p {
+        font-size: 1rem;
+        color: #aaa;
+        margin-bottom: 2px;
+        margin-top: 0;
+        line-height: 1.4;
+        }
+        .about, .education, .contact {
+        font-size: 0.95rem;
+        color: #444;
+        margin-bottom: 0;
+        line-height: 1.5;
+        text-align: center;
+        }
+        .about p, .education p, .contact p {
+        margin: 0 0 4px 0;
+        line-height: 1.5;
+        text-align: center;
+        }
+        .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px; /* More space between images */
+        justify-content: center;
+        margin-bottom: 4px;
+        }
+        .gallery-container img {
+        width: 140px; /* Bigger images */
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+        box-shadow: none;
+        background: #DCDDCC;
+        margin: 0;
+        transition: opacity 0.2s;
+        opacity: 0.95;
+        }
+        .gallery-container img:hover {
+        opacity: 1;
+        }
+        footer {
+        font-size: 0.4rem;
+        color: #aaa;
+        margin: 24px 0 6px 0;
+        text-align: center;
+        width: 100%;
+        }
+        a {
+        color: #888;
+        text-decoration: underline dotted;
+        transition: color 0.2s;
+        }
+        a:hover {
+        color: #222;
+        }
+        @media (max-width: 700px) {
+        section {
+            max-width: 98vw;
+            padding: 0 2vw;
+        }
+        .gallery-container img {
+            width: 44vw;
+            max-width: 180px;
+        }
+        }
   </style>
 </head>
 
@@ -114,7 +142,7 @@
     <!-- Header Section -->
     <header>
         <div class="logo">
-            <img src="assets/9E8093FE-1E34-4F95-806A-63B29E28859D.png" alt="Marvora Logo" style="width:72px; border-radius:12px; display:block; margin:0 auto 4px auto; background:#DCDDCC;">
+            <h1>Marvora.</h1>
         </div>
     </header>
 
