@@ -6,38 +6,119 @@
   <title>Marvora</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Example: Use a soft, modern font like 'Montserrat' -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Use a minimalist, light font similar to sanaa.co.jp -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
   <style>
+    /* Soft, light gray background sampled from the logo image */
     body {
-      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      background: #f7f6f3;
       min-height: 100vh;
       margin: 0;
       font-family: 'Montserrat', Arial, sans-serif;
+      color: #222;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
+      font-size: 14px;
+      letter-spacing: 0.01em;
+      font-weight: 300;
     }
     .logo-title {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 40px;
+      margin-top: 32px;
+      margin-bottom: 16px;
     }
     .logo-title img {
-      width: 160px;
+      width: 96px;
       height: auto;
-      border-radius: 24px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-      margin-bottom: 24px;
+      border-radius: 16px;
+      box-shadow: none;
+      margin-bottom: 8px;
+      background: transparent;
     }
-    .logo-title h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: #3a3a3a;
-      letter-spacing: 2px;
+    h1, h2 {
+      font-size: 1.1rem;
+      font-weight: 400;
+      margin: 0 0 12px 0;
+      letter-spacing: 0.04em;
+      color: #222;
+    }
+    h2 {
+      font-size: 1rem;
+      font-weight: 400;
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+    section {
+      width: 100%;
+      max-width: 420px;
+      margin: 0 auto 12px auto;
+      padding: 0 12px;
+      box-sizing: border-box;
+    }
+    .hero h2 {
+      font-size: 1rem;
+      font-weight: 300;
+      margin-bottom: 8px;
+      color: #444;
+    }
+    .hero p {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 0;
+    }
+    .about, .education, .contact {
+      font-size: 0.95rem;
+      color: #444;
+    }
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-bottom: 8px;
+    }
+    .gallery-container img {
+      width: 90px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: none;
+      background: #f7f6f3;
       margin: 0;
+      transition: opacity 0.2s;
+      opacity: 0.95;
+    }
+    .gallery-container img:hover {
+      opacity: 1;
+    }
+    footer {
+      font-size: 0.85rem;
+      color: #aaa;
+      margin: 32px 0 8px 0;
+      text-align: center;
+      width: 100%;
+    }
+    a {
+      color: #888;
+      text-decoration: underline dotted;
+      transition: color 0.2s;
+    }
+    a:hover {
+      color: #222;
+    }
+    @media (max-width: 500px) {
+      section {
+        max-width: 98vw;
+        padding: 0 4vw;
+      }
+      .gallery-container img {
+        width: 44vw;
+        max-width: 120px;
+      }
     }
   </style>
 </head>
@@ -46,7 +127,6 @@
     <!-- Header Section -->
     <div class="logo-title">
         <img src="assets/9E8093FE-1E34-4F95-806A-63B29E28859D.png" alt="Marvora Logo">
-        <h1>Marvora</h1>
     </div>
 
     <!-- Hero Section -->
@@ -66,17 +146,14 @@
     <section class="gallery">
         <h2>Our Work</h2>
         <div class="gallery-container">
-            <!-- Images from user uploads -->
             <img src="./assets/1F37EE85-DCD1-472F-A84E-592BF8450858.png" alt="Interior Design Image 1">
             <img src="./assets/3B496CCD-3BC3-4503-A297-414366BDF651.jpeg" alt="Interior Design Image 2">
             <img src="./assets/05AAA630-C212-46CB-95DC-DCAACB153D2D.png" alt="Interior Design Image 3">
             <img src="./assets/7B26C703-A773-4601-8DF8-729538BB7E3B.png" alt="Interior Design Image 4">
             <img src="./assets/9AC8664E-9128-4D50-AF41-386FB71AAC52.png" alt="Interior Design Image 5">
-            <img src="./assets/9E8093FE-1E34-4F95-806A-63B29E28859D.png" alt="Interior Design Image 6">
             <img src="./assets/B8602166-BE92-4167-9117-C57B46DC832E.jpeg" alt="Interior Design Image 7">
             <img src="./assets/A5E0ED69-1AC4-4DB8-9A09-56DF5A5C7AA7.png" alt="Interior Design Image 8">
             <img src="./assets/D2D867C0-AB8E-4976-A244-13341727051F.png" alt="Interior Design Image 9">
-            <img src="./assets/BD69BCC6-F1E4-4928-8F64-36A8A91148CE.png" alt="Interior Design Image 10">
         </div>
     </section>
     
